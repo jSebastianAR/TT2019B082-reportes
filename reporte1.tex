@@ -16,15 +16,15 @@
 
 \setlength{\parskip}{1em}
 
-\newcommand{\descripcion}{Un elemento dentro de esta categoría cuenta con los siguientes atributos:}
+\newcommand{\descripcion}{Un elemento dentro de esta categor\'ia cuenta con los siguientes atributos:}
 \newcommand{\total}{Total de elementos: }
-\newcommand{\UID}{\textbf{UID:} El identificador único del elemento. Los ID únicos se pueden agrupar en función de un atributo común.}
-\newcommand{\OID}{\textbf{ObjectID:} Un Id. de objeto es un campo único de enteros no nulos que se utiliza para identificar de forma única las filas en las tablas de una geodatabase. En el caso que nos ocupa, el ObjectID y el UID tienen el mismo valor.}
-\newcommand{\ent}{\textbf{Entidad:} Hace referencia a la categoría del elemento }
-\newcommand{\SHA}{\textbf{Shape\_area:} Es el cálculo del área plana para los polígonos de una geodatabase anidada.}
-\newcommand{\SHL}{\textbf{Shape\_length:} Es el cálculo del perímetro para los polígonos de una geodatabase anidada.}
-\newcommand{\GISA}{\textbf{GIS\_area:} contiene valores de área actualizados dinámicamente para cada polígono en una capa de polígonos.}
-\newcommand{\GISL}{\textbf{GIS\_length:} contiene valores de longitud actualizados dinámicamente para cada línea en una capa de polilínea.}
+\newcommand{\UID}{\textbf{UID:} El identificador \'unico del elemento. Los ID \'unicos se pueden agrupar en funci\'on de un atributo com\'un.}
+\newcommand{\OID}{\textbf{ObjectID:} Un Id. de objeto es un campo \'unico de enteros no nulos que se utiliza para identificar de forma \'unica las filas en las tablas de una geodatabase. En el caso que nos ocupa, el ObjectID y el UID tienen el mismo valor.}
+\newcommand{\ent}{\textbf{Entidad:} Hace referencia a la categor\'ia del elemento }
+\newcommand{\SHA}{\textbf{Shape\_area:} Es el c\'alculo del \'area plana para los pol\'igonos de una geodatabase anidada.}
+\newcommand{\SHL}{\textbf{Shape\_length:} Es el c\'alculo del per\'imetro para los pol\'igonos de una geodatabase anidada.}
+\newcommand{\GISA}{\textbf{GIS\_area:} contiene valores de \'area actualizados din\'amicamente para cada pol\'igono en una capa de pol\'igonos.}
+\newcommand{\GISL}{\textbf{GIS\_length:} contiene valores de longitud actualizados din\'amicamente para cada l\'inea en una capa de polil\'inea.}
 
 \begin{document}
 
@@ -48,10 +48,10 @@ Israel Buitr\'on D\'amaso
   Presentamos una descripci\'on breve de los conjuntos de datos estudiados.
 \end{abstract}
 
-\section{Introducción} % (fold)
+\section{Introducci\'on} % (fold)
 \label{sec:introduccion}
 
-En este reporte se detalla la labor de estudio de los conjuntos de datos, considerados inicialmente, para ser posibles fuentes de información.
+En este reporte se detalla la labor de estudio de los conjuntos de datos, considerados inicialmente, para ser posibles fuentes de informaci\'on.
 
 Las actividades consideradas en este estudio son:
 \begin{itemize}
@@ -106,14 +106,14 @@ Este conjunto de datos pretende dar informaci\'on acerca del uso del suelo y de 
 % section conjuntos_de_datos (end)
 %
 
-\subsection{Conjunto de datos vectoriales de la serie topográfica escala 1:1 000 000}
+\subsection{Conjunto de datos vectoriales de la serie topogr\'afica escala 1:1 000 000}
 
-Contienen la información sobre los diversos rasgos geográficos presentes en la Carta Topográfica. Estos rasgos son representados digitalmente por un componente geométrico (puntos, líneas o áreas), y un componente descriptivo (los atributos del rasgo). La información se obtuvo derivada de los Conjuntos de Datos Topográficos 1:250,000, serie II, actualizados de noviembre de 1995 a noviembre de 1997. Período de tiempo del Conjunto de Datos: enero de 1993 a abril de 1997. El tratamiento para generalización de datos de la escala 1:250,000 a 1:1'000,000 se realizó de enero a julio de 2000.\\
+Contienen la informaci\'on sobre los diversos rasgos geogr\'aficos presentes en la Carta Topogr\'afica. Estos rasgos son representados digitalmente por un componente geom\'etrico (puntos, l\'ineas o \'areas), y un componente descriptivo (los atributos del rasgo). La informaci\'on se obtuvo derivada de los Conjuntos de Datos Topogr\'aficos 1:250,000, serie II, actualizados de noviembre de 1995 a noviembre de 1997. Per\'iodo de tiempo del Conjunto de Datos: enero de 1993 a abril de 1997. El tratamiento para generalizaci\'on de datos de la escala 1:250,000 a 1:1'000,000 se realiz\'o de enero a julio de 2000.\\
 
 Enlace al Conjunto de Datos: 
 \url{https://datos.gob.mx/busca/dataset/conjunto-de-datos-vectoriales-de-informacion-topografica-escala-1-1000-000}
 
-Los datos topográficos disponibles en el conjunto de datos se encuentran divididos en las siguientes categorías:
+Los datos topogr\'aficos disponibles en el conjunto de datos se encuentran divididos en las siguientes categor\'ias:
 \begin{enumerate}
 	\item \textbf{cuerposagua}
 	\item \textbf{aeropuerto}
@@ -133,30 +133,30 @@ Los datos topográficos disponibles en el conjunto de datos se encuentran dividi
 \end{enumerate}
 
 \subsubsection{Cuerpos de agua}
-Extensión de agua limitada por tierra.\descripcion
+Extensi\'on de agua limitada por tierra.\descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
 	\item \ent (cuerpo de agua).
 	\item \textbf{Tipo:} Se refiere al tipo de cuerpo de agua. Se manejan dos tipos:
 		\begin{itemize}
-			\item[--] \textbf{Intermitente:} Con presencia de agua en determinadas épocas del año.
+			\item[--] \textbf{Intermitente:} Con presencia de agua en determinadas \'epocas del a\~no.
 			\item[--] \textbf{Perenne:} Con presencia de agua permanentemente.
 		\end{itemize}
 	\item \SHA
 	\item \SHL
 	\item \GISA \\
-	Las áreas (polígonos) son una serie de coordenadas geográficas unidas para formar un límite. Una área es una línea cerrada. Una entidad de área tiene una longitud y un ancho y puede tener atributos. En \textbf{GIS} (Geographic Information System: es un sistema diseñado para capturar, almacenar, manipular, analizar, administrar y presentar todo tipo de datos geográficos) las características del área se denominan polígonos. Un polígono es un arco único o una serie de arcos que están conectados entre sí para encerrar un área.
+	Las \'areas (pol\'igonos) son una serie de coordenadas geogr\'aficas unidas para formar un l\'imite. Una \'area es una l\'inea cerrada. Una entidad de \'area tiene una longitud y un ancho y puede tener atributos. En \textbf{GIS} (Geographic Information System: es un sistema dise\~nado para capturar, almacenar, manipular, analizar, administrar y presentar todo tipo de datos geogr\'aficos) las caracter\'isticas del \'area se denominan pol\'igonos. Un pol\'igono es un arco \'unico o una serie de arcos que est\'an conectados entre s\'i para encerrar un \'area.
 	\item \GISL
 \end{itemize}
 \total \textbf{1098.}
 
 \subsubsection{Puentes}
-Estructuras que permiten el paso de una vía de comunicación terrestre sobre un obstáculo natural o artificial. \descripcion
+Estructuras que permiten el paso de una v\'ia de comunicaci\'on terrestre sobre un obst\'aculo natural o artificial. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
-	\item \textbf{Condición:} Indica si el puente está en operación, en construcción o fuera de uso. El único valor disponible entre los datos es \emph{En operación}.
+	\item \textbf{Condici\'on:} Indica si el puente est\'a en operaci\'on, en construcci\'on o fuera de uso. El \'unico valor disponible entre los datos es \emph{En operaci\'on}.
 	\item \ent (puente).
 	\item \SHL
 	\item \GISL
@@ -169,36 +169,36 @@ Conductos artificiales empleados para transportar agua potable. \descripcion
 	\item \UID
 	\item \OID
 	\item \ent (acueducto).
-	\item \textbf{RelSuelo:} Este atributo tiene por único valor \emph{Subterráneo} para cada uno de los elementos en la categoría; el cual describe el tipo de acueducto.
+	\item \textbf{RelSuelo:} Este atributo tiene por \'unico valor \emph{Subterr\'aneo} para cada uno de los elementos en la categor\'ia; el cual describe el tipo de acueducto.
 	\item \SHL
 	\item \GISL
 \end{itemize}
 \total \textbf{917.}
 
-\subsubsection{Vías Férreas}
-Vías de comunicación terrestre, cuya estructura consta de una terraplén y dos rieles fijados mediante durmientes, para el tránsito de trenes. \descripcion
+\subsubsection{V\'ias F\'erreas}
+V\'ias de comunicaci\'on terrestre, cuya estructura consta de una terrapl\'en y dos rieles fijados mediante durmientes, para el tr\'ansito de trenes. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
-	\item \textbf{Tipo:} Hace referencia a la clase de vía disponible en una zona; hay tres valores disponibles que puede adquirir ese atributo:
+	\item \textbf{Tipo:} Hace referencia a la clase de v\'ia disponible en una zona; hay tres valores disponibles que puede adquirir ese atributo:
 	\begin{itemize}
-		\item[--] \textbf{Vía sencilla:} Que solo tiene una vía en toda su longitud y por ella se verifica el movimiento de los trenes en ambos sentidos, ejecutándose el cruce de los mismos en las estaciones y algunos puntos determinados, donde se sitúan con tal objeto vías dobles o apartaderos (un desvío o cambio de agujas es un aparato de vía que permite a los trenes cambiar de una vía a otra).
-		\item[--] \textbf{Vía doble:} Que en toda su longitud tiene la vía doble, dedicándose cada una para la marcha de los trenes en un sentido.
+		\item[--] \textbf{V\'ia sencilla:} Que solo tiene una v\'ia en toda su longitud y por ella se verifica el movimiento de los trenes en ambos sentidos, ejecut\'andose el cruce de los mismos en las estaciones y algunos puntos determinados, donde se sit\'uan con tal objeto v\'ias dobles o apartaderos (un desv\'io o cambio de agujas es un aparato de v\'ia que permite a los trenes cambiar de una v\'ia a otra).
+		\item[--] \textbf{V\'ia doble:} Que en toda su longitud tiene la v\'ia doble, dedic\'andose cada una para la marcha de los trenes en un sentido.
 		\item[--] \textbf{N/A:} No aplicable. Existen 92 elementos con este valor, de los 2424 disponibles. 
 	\end{itemize}
-	\item \textbf{Condición:} Indica si la vía está operativa o no. El único valor disponible entre los datos es \emph{En operación}.
-	\item \ent (vía férrea).
+	\item \textbf{Condici\'on:} Indica si la v\'ia est\'a operativa o no. El \'unico valor disponible entre los datos es \emph{En operaci\'on}.
+	\item \ent (v\'ia f\'errea).
 	\item \SHL
 	\item \GISL
 \end{itemize}
 \total \textbf{2424.}
 
-\subsubsection{Vegetación Densa}
+\subsubsection{Vegetaci\'on Densa}
 \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
-	\item \ent (vegetación densa).
+	\item \ent (vegetaci\'on densa).
 	\item \SHA
 	\item \SHL
 	\item \GISA
@@ -206,18 +206,18 @@ Vías de comunicación terrestre, cuya estructura consta de una terraplén y dos
 \end{itemize}
 \total \textbf{868.}
 
-\subsubsection{Rutas de embarcación}
-Rutas sobre el agua que siguen las embarcaciones que regularmente transportan vehículos y pasajeros. \descripcion
+\subsubsection{Rutas de embarcaci\'on}
+Rutas sobre el agua que siguen las embarcaciones que regularmente transportan veh\'iculos y pasajeros. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
 	\item \textbf{Tipo:} Se indica que tipo de embarcaciones transitan por la ruta:
 	\begin{itemize}
-		\item[--] \textbf{Chalana:} Embarcación de fondo plano que se utiliza para el transporte de pasajeros y automóviles de una orilla a otra de un río.
-		\item[--] \textbf{Panga:} Embarcación de fondo plano que se utiliza para el transporte de pasajeros y automóviles de una orilla a otra de un río, ésta embarcación es de dimensiones menores que la chalana.
-		\item[--] \textbf{Transbordador:} Barco acondicionado para transportar de un puerto a otro automóviles, vagones, pasajeros, etc. 
+		\item[--] \textbf{Chalana:} Embarcaci\'on de fondo plano que se utiliza para el transporte de pasajeros y autom\'oviles de una orilla a otra de un r\'io.
+		\item[--] \textbf{Panga:} Embarcaci\'on de fondo plano que se utiliza para el transporte de pasajeros y autom\'oviles de una orilla a otra de un r\'io, \'esta embarcaci\'on es de dimensiones menores que la chalana.
+		\item[--] \textbf{Transbordador:} Barco acondicionado para transportar de un puerto a otro autom\'oviles, vagones, pasajeros, etc. 
 	\end{itemize}
-	\item \ent (ruta de embarcación).
+	\item \ent (ruta de embarcaci\'on).
 	\item \SHL
 	\item \GISL
 \end{itemize}
@@ -231,37 +231,37 @@ Rutas sobre el agua que siguen las embarcaciones que regularmente transportan ve
 %\end{itemize}
 
 \subsubsection{Plantas generadoras}
-Instalaciones para producir energía eléctrica. \descripcion
+Instalaciones para producir energ\'ia el\'ectrica. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
 	\item \ent (planta generadora).
 	\item \textbf{Tipo de Planta Generadora:} 
 	\begin{itemize}
-		\item[--] \textbf{Geotérmica:} Por acción del vapor de agua generado en el interior de la tierra.
-		\item[--] \textbf{Hidroeléctrica:} Por acción de fuerza hidráulica.
-		\item[--] \textbf{Nucleoeléctrica:} Por acción del vapor de agua generado mediante el uso de la energía nuclear.
-		\item[--] \textbf{Termoeléctrica:} Por acción del vapor de agua.
+		\item[--] \textbf{Geot\'ermica:} Por acci\'on del vapor de agua generado en el interior de la tierra.
+		\item[--] \textbf{Hidroel\'ectrica:} Por acci\'on de fuerza hidr\'aulica.
+		\item[--] \textbf{Nucleoel\'ectrica:} Por acci\'on del vapor de agua generado mediante el uso de la energ\'ia nuclear.
+		\item[--] \textbf{Termoel\'ectrica:} Por acci\'on del vapor de agua.
 	\end{itemize}
-	\item \textbf{Condición de la Planta Generadora:}
+	\item \textbf{Condici\'on de la Planta Generadora:}
 	\begin{itemize}
-		\item[--] \textbf{En construcción:} Que está en un proceso de construcción.
-		\item[--] \textbf{En operación:} Que está en servicio o puede usarse.
+		\item[--] \textbf{En construcci\'on:} Que est\'a en un proceso de construcci\'on.
+		\item[--] \textbf{En operaci\'on:} Que est\'a en servicio o puede usarse.
 	\end{itemize}
 \end{itemize}
 \total \textbf{80.}
 
-\subsubsection{Líneas de transmisión}
-Conjunto de cables aéreso, empleados para conducción de energía eléctrica. \descripcion
+\subsubsection{L\'ineas de transmisi\'on}
+Conjunto de cables a\'ereso, empleados para conducci\'on de energ\'ia el\'ectrica. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
-	\ent (línea de transmisión)
-	\item \textbf{Alineamiento:} Número de alineamientos de soporte.
+	\ent (l\'inea de transmisi\'on)
+	\item \textbf{Alineamiento:} N\'umero de alineamientos de soporte.
 	\begin{itemize}
-		\item[--] \textbf{Una línea de torres de acero}.
-		\item[--] \textbf{Dos líneas de torres de acero}.
-		\item[--] \textbf{Más de dos líneas de torres de acero}.
+		\item[--] \textbf{Una l\'inea de torres de acero}.
+		\item[--] \textbf{Dos l\'ineas de torres de acero}.
+		\item[--] \textbf{M\'as de dos l\'ineas de torres de acero}.
 	\end{itemize}
 	\item \SHL
 	\item \GISL
@@ -269,26 +269,26 @@ Conjunto de cables aéreso, empleados para conducción de energía eléctrica. \
 \total \textbf{2423.}
 
 \subsubsection{Curvas de nivel}
-Líneas imaginarias que une puntos con la misma elevación con respecto al nivel del mar empleada para representar el relieve del terreno. \descripcion
+L\'ineas imaginarias que une puntos con la misma elevaci\'on con respecto al nivel del mar empleada para representar el relieve del terreno. \descripcion
 \begin{itemize}
 	\item \UID
 	\item \OID
 	\item \ent (curva de nivel).
 	\item \textbf{Tipo de curva de nivel:}
 	\begin{itemize}
-		\item[--] \textbf{Depresión:} Para representar un hundimiento en el terreno donde no hay salida del drenaje.
+		\item[--] \textbf{Depresi\'on:} Para representar un hundimiento en el terreno donde no hay salida del drenaje.
 		\item[--] \textbf{Otros:} Cualquiera diferente al definido.
 	\end{itemize}
-	\item \textbf{Elevación de la curva de nivel:} Valor en metros de la elevación. De 0 a 5600.
+	\item \textbf{Elevaci\'on de la curva de nivel:} Valor en metros de la elevaci\'on. De 0 a 5600.
 	\item \textbf{Length:} Longitud.
 	\item \SHL
 	\item \GISL
 \end{itemize}
 \total \textbf{99488.}
 
-\subsection{Valor de la producción agrícola del Estado de Jalisco}
+\subsection{Valor de la producci\'on agr\'icola del Estado de Jalisco}
 
-Información del valor de la producción agrícola del Estado de Jalisco y sus municipios. Presenta cifras expresadas en miles de pesos. Las cifras presentadas van del año 2003 al 2014. Se incluye la información de 123 de los 125 municipios del estado de Jalisco (los municipios excluidos son Guadalajara y San Ignacio Cerro Gordo).
+Informaci\'on del valor de la producci\'on agr\'icola del Estado de Jalisco y sus municipios. Presenta cifras expresadas en miles de pesos. Las cifras presentadas van del a\~no 2003 al 2014. Se incluye la informaci\'on de 123 de los 125 municipios del estado de Jalisco (los municipios excluidos son Guadalajara y San Ignacio Cerro Gordo).
 
 Enlace al Conjunto de Datos:
 \url{https://datos.gob.mx/busca/dataset/valor-produccion-agricola-jalisco}
